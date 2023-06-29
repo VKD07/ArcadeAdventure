@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class GameEventListener : MonoBehaviour
 {
     [SerializeField] GameEvent gameEvent;
-    [SerializeField] UnityEvent [] response;
+    [SerializeField] UnityEvent response;
 
     private void OnEnable()
     {
@@ -19,6 +19,6 @@ public class GameEventListener : MonoBehaviour
     }
     public void OnEventRaise()
     {
-        response[0].Invoke();
+        response.Invoke();
     }
 }

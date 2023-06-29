@@ -14,4 +14,9 @@ public class Character2DMovement : MonoBehaviour
     {
         transform.position += -transform.right * movementSpeed.value * Time.deltaTime;
     }
+
+    public void MoveLeft()
+    {
+        transform.position += transform.right * movementSpeed.value * Time.deltaTime;
+    }
 }

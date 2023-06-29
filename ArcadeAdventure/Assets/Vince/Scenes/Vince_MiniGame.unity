@@ -786,9 +786,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1718791321}
   - component: {fileID: 1718791323}
+  - component: {fileID: 1718791325}
   - component: {fileID: 1718791322}
   - component: {fileID: 1718791324}
-  - component: {fileID: 1718791325}
   - component: {fileID: 1718791326}
   m_Layer: 0
   m_Name: Player2D
@@ -1306,8 +1306,6 @@ GameObject:
   - component: {fileID: 543450652972801722}
   - component: {fileID: 919132148715586561}
   - component: {fileID: 919132148715586562}
-  - component: {fileID: 919132148715586564}
-  - component: {fileID: 919132148715586563}
   - component: {fileID: 919132148715586565}
   - component: {fileID: 919132148715586566}
   m_Layer: 0
@@ -1352,9 +1350,9 @@ MonoBehaviour:
   OnButtonPressed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 235ae6fbc1343a443b448e92310733cd, type: 2}
-        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
-        m_MethodName: Raise
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameEvent2, Assembly-CSharp
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1366,75 +1364,7 @@ MonoBehaviour:
         m_CallState: 2
   OnButtonReleased:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: b19d3199aaafcd841ae7eb48759575df, type: 2}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &919132148715586563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148715586560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e629c041ddd94448600feef46cc286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: b19d3199aaafcd841ae7eb48759575df, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 919132148715586565}
-        m_TargetAssemblyTypeName: ArcadeBtn_Animation, Assembly-CSharp
-        m_MethodName: PressedAnim
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &919132148715586564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148715586560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e629c041ddd94448600feef46cc286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 235ae6fbc1343a443b448e92310733cd, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 919132148715586565}
-        m_TargetAssemblyTypeName: ArcadeBtn_Animation, Assembly-CSharp
-        m_MethodName: PressedAnim
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &919132148715586565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1455,7 +1385,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148715586560}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.3367821, y: 0.06715267, z: 0.31983238}
