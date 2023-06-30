@@ -12,11 +12,26 @@ public class Character2DMovement : MonoBehaviour
     }
     public void MoveRight()
     {
-        transform.position += -transform.right * movementSpeed.value * Time.deltaTime;
+        SetDirection(-transform.right);
     }
 
     public void MoveLeft()
     {
-        transform.position += transform.right * movementSpeed.value * Time.deltaTime;
+        SetDirection(transform.right);
+    }
+
+    public void MoveUp()
+    {
+        SetDirection(transform.up);
+    }
+
+    public void MoveDown()
+    {
+        SetDirection(-transform.up);
+    }
+
+    void SetDirection(Vector3 direction)
+    {
+        transform.position += direction * movementSpeed.value * Time.deltaTime;
     }
 }
