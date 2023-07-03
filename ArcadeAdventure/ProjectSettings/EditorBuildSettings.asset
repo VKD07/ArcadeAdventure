@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Aly Scene.unity
+    guid: 7f4a1610d846e3e45a7e48a28c3b1442
   m_configObjects: {}
