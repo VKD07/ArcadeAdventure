@@ -37,7 +37,6 @@ public class EnemyMovementEditor : Editor
             destinationNum = 0;
             enemyMovement.ResetDestinations();
         }
-
         serializedObject.ApplyModifiedProperties();
     }
 }

@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Aly Scene.unity
     guid: 7f4a1610d846e3e45a7e48a28c3b1442
+  - enabled: 1
+    path: Assets/Vince/Scenes/Vince_MiniGame.unity
+    guid: 3dfbbabe57a8f8648b7a7eb7819683c4
+  - enabled: 1
+    path: Assets/Vince/Scenes/MiniGame_Level2.unity
+    guid: f4194d7a5c9d20a40be1b79879817d71
   m_configObjects: {}

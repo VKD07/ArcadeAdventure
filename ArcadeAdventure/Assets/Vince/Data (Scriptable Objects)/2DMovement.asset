@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2fa49bc600520f48b49b2799817eab4, type: 3}
   m_Name: 2DMovement
   m_EditorClassIdentifier: 
-  value: 0.1
+  value: 2
