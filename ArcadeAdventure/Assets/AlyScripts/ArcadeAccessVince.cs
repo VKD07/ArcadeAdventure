@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AccessArcade : MonoBehaviour
+public class ArcadeAccessVince : MonoBehaviour
 {
     public GameObject OpenPanel = null;
 

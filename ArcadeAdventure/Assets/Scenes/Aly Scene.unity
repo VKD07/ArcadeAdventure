@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb64b0e98f67134ea0177170ea76c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iLevelToLoad: 0
+  iLevelToLoad: 1
   useIntegerToLoadLevel: 1
   ballStart: {fileID: 1457515460}
 --- !u!1 &426765946

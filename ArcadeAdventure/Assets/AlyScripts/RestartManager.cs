@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class RestartManager : MonoBehaviour
 {
-    //var gameobjec  Gameobjectt;
+    
 
     public int iLevelToLoad;
     public bool useIntegerToLoadLevel;
@@ -21,6 +21,15 @@ public class RestartManager : MonoBehaviour
         {
             //Invoke("LoadScene", 0.0001f);
             transform.position = ballStart.transform.position;
+
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            Invoke("LoadScene", 0.0001f);
 
         }
     }
