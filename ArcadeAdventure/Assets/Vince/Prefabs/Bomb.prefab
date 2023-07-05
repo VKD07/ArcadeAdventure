@@ -115,6 +115,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  explosion: {fileID: 3708160702962477736, guid: b2663e7f39ae868498de7c1b15bd0f2c, type: 3}
 --- !u!1 &6623127400500831232
 GameObject:
   m_ObjectHideFlags: 0

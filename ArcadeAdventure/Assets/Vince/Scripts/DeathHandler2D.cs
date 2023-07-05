@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class DeathHandler2D : MonoBehaviour
@@ -11,6 +12,7 @@ public class DeathHandler2D : MonoBehaviour
     [SerializeField] float horizMaxLimit;
     [SerializeField] float verticalMinLimit;
     [SerializeField] float verticalMaxLimit;
+    [SerializeField] UnityEvent OnDeathEvent;
 
     private void Update()
     {
@@ -22,8 +24,14 @@ public class DeathHandler2D : MonoBehaviour
         if (transform.localPosition.x > horizontalMinLimit || transform.localPosition.x < horizMaxLimit
             || transform.localPosition.y < verticalMinLimit || transform.localPosition.y > verticalMaxLimit)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            OnDeathEvent.Invoke();
+
         }
+    }
+
+    public void OnDestroy()
+    {
+            OnDeathEvent.Invoke();
     }
     //private void OnCollisionEnter2D(Collision2D collision)
     //{

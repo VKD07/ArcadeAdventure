@@ -11,6 +11,7 @@ public class BombScript : MonoBehaviour
     [SerializeField] BombData bombData;
     [SerializeField] Animator bombCircleAnim;
     [SerializeField] UnityEvent OnExplosion;
+    [SerializeField] GameObject explosion;
     // Update is called once per frame
     private void OnEnable()
     {
@@ -29,6 +30,7 @@ public class BombScript : MonoBehaviour
 
     private void OnDisable()
     {
+        SpawnExplosionVFX();
         bombCircleAnim.speed = 1f;
         if (Physics2D.OverlapCircle(transform.position, bombData.bombRange, bombData.layerAffected))
         {
@@ -53,5 +55,11 @@ public class BombScript : MonoBehaviour
         OnExplosion.Invoke();
         ShakeCamera.Instance.TriggerCameraShake();
         gameObject.SetActive(false);
+    }
+
+    void SpawnExplosionVFX()
+    {
+        GameObject explosionVfx = Instantiate(explosion,transform.position,Quaternion.identity);
+        Destroy(explosionVfx, 1);
     }
 }

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Vince/Scenes/MiniGame_Level2.unity
     guid: f4194d7a5c9d20a40be1b79879817d71
+  - enabled: 1
+    path: Assets/Vince/Scenes/MainMenu.unity
+    guid: eb6860720d4aa744d922df68bd3dd10a
   m_configObjects: {}
