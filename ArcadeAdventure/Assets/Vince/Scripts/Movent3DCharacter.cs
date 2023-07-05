@@ -3,16 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Movent3DCharacter : MonoBehaviour
 {
     [SerializeField] PlayerControlsData playerControls;
     [SerializeField] FloatReference movementSpeed;
     [SerializeField] FloatReference rotationSpeed;
     [SerializeField] FloatReference characterVelocity;
+    [SerializeField] AudioClip footStep;
+    AudioSource audioSource;
     Rigidbody rb;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,5 +42,10 @@ public class Movent3DCharacter : MonoBehaviour
         {
             transform.forward = movementDirection;
         }
+    }
+
+    public void PlayFootStep()
+    {
+        audioSource.PlayOneShot(footStep, 0.2f);
     }
 }

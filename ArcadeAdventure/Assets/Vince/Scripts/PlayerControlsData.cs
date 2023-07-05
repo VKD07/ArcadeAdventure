@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerControlsData : ScriptableObject
 {
     [SerializeField] KeyCode activate3DKey;
+    [SerializeField] KeyCode bombKey;
     public float HorizontalAxis
     {
         get
@@ -26,4 +27,6 @@ public class PlayerControlsData : ScriptableObject
     {
         get { return activate3DKey; }
     }
+
+    public KeyCode BombKey => bombKey;
 }
