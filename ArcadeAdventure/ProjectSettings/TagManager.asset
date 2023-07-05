@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Deadly
+  - DeathCollider
+  - Enemy
+  - Boundary
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX
