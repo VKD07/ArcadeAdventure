@@ -7,8 +7,7 @@ public class RestartManager : MonoBehaviour
 {
     
 
-    public int iLevelToLoad;
-    public bool useIntegerToLoadLevel;
+    
     public Transform ballStart;
     
     
@@ -25,20 +24,7 @@ public class RestartManager : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            Invoke("LoadScene", 0.0001f);
+    
 
-        }
-    }
-
-    void LoadScene()
-    {
-        if (useIntegerToLoadLevel)
-        {
-            SceneManager.LoadScene(iLevelToLoad);
-        }
-    }
+    
 }
