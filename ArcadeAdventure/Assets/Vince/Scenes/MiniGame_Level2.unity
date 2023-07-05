@@ -6102,6 +6102,7 @@ GameObject:
   - component: {fileID: 7134874185249881323}
   - component: {fileID: 7134874185249881322}
   - component: {fileID: 7134874185249881318}
+  - component: {fileID: 7134874185249881324}
   m_Layer: 5
   m_Name: UI Canvas
   m_TagString: Untagged
@@ -6149,6 +6150,20 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
+--- !u!114 &7134874185249881324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7134874185249881321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00a5813a1943f149adbff5b5ff4276a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iLevelToLoad: 0
+  useIntegerToLoadLevel: 0
 --- !u!114 &7134874185391445148
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2079,7 +2079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenPanel: {fileID: 1684837060}
-  iLevelToLoad: 2
+  iLevelToLoad: 3
   useIntegerToLoadLevel: 1
 --- !u!65 &963522375
 BoxCollider:
@@ -2915,7 +2915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenPanel: {fileID: 49721965}
-  iLevelToLoad: 0
+  iLevelToLoad: 1
   useIntegerToLoadLevel: 1
 --- !u!4 &1349795234 stripped
 Transform:
