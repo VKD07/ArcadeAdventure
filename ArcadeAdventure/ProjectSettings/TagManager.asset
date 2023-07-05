@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - DeathCollider
+  - Boundary
+  - Enemy
+  - 'Boundary Left '
   layers:
   - Default
   - TransparentFX
