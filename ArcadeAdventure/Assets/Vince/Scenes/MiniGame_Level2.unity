@@ -6163,7 +6163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iLevelToLoad: 0
-  useIntegerToLoadLevel: 0
+  useIntegerToLoadLevel: 1
 --- !u!114 &7134874185391445148
 MonoBehaviour:
   m_ObjectHideFlags: 0

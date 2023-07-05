@@ -2851,7 +2851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iLevelToLoad: 0
-  useIntegerToLoadLevel: 0
+  useIntegerToLoadLevel: 1
 --- !u!1 &1706865998
 GameObject:
   m_ObjectHideFlags: 0

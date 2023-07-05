@@ -2429,7 +2429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenPanel: {fileID: 1225108291}
-  iLevelToLoad: 3
+  iLevelToLoad: 6
   useIntegerToLoadLevel: 1
 --- !u!1001 &1171900950
 PrefabInstance:
