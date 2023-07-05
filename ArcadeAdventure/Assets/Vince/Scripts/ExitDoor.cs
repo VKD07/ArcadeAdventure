@@ -12,6 +12,7 @@ public class ExitDoor : MonoBehaviour
     [SerializeField] LayerMask playerLayer;
     [SerializeField] string sceneNameToLoad;
     SpriteRenderer spriteRenderer;
+    bool sceneLoaded;
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -23,7 +24,8 @@ public class ExitDoor : MonoBehaviour
     }
     private void ShowDoor()
     {
-        if(listOfEnemies.enemies.Count <= 0) {
+        if (listOfEnemies.enemies.Count <= 0)
+        {
             spriteRenderer.enabled = true;
             EndLevel();
         }
@@ -33,11 +35,9 @@ public class ExitDoor : MonoBehaviour
     {
         if (Physics2D.OverlapCircle(transform.position, detectionRange, playerLayer))
         {
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, detectionRange, playerLayer);
-
-            foreach (Collider2D collider in colliders)
+            if(sceneNameToLoad != null)
             {
-               SceneManager.LoadScene(sceneNameToLoad);
+                SceneManager.LoadScene(sceneNameToLoad);
             }
         }
     }

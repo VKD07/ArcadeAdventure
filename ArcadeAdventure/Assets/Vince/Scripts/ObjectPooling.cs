@@ -14,7 +14,7 @@ public class ObjectPooling : ScriptableObject
     {
         for (int i = 0; i < numberOfObjectsToSpawn; i++)
         {
-            GameObject bombObj = Instantiate(bombPrefab);
+            GameObject bombObj = Instantiate(bombPrefab, Vector3.one, Quaternion.identity);
             AddToPool(bombObj);
             bombObj.SetActive(false);
             bombObj.transform.SetParent(parent);

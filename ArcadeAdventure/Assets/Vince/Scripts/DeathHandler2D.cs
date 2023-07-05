@@ -17,17 +17,12 @@ public class DeathHandler2D : MonoBehaviour
         CheckPlayerPos();
     }
 
-    private void OnDestroy()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
     private void CheckPlayerPos()
     {
         if (transform.localPosition.x > horizontalMinLimit || transform.localPosition.x < horizMaxLimit
             || transform.localPosition.y < verticalMinLimit || transform.localPosition.y > verticalMaxLimit)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     //private void OnCollisionEnter2D(Collision2D collision)

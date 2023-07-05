@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyAttack : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Destroy(collision.gameObject);
+            Destroy(collision.gameObject);  
         }
     }
 }
