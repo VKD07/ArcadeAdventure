@@ -46,7 +46,7 @@ public class playerLives : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy Projectile")
+        if (collision.gameObject.tag == "EnemyProjectile")
         {
             Destroy(collision.gameObject);
             lives -= 1;

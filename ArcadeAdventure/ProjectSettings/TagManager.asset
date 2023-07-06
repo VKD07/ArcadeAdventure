@@ -4,18 +4,19 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Deadly
   - DeathCollider
-  - Boundary
   - Enemy
-  - 'Boundary Left '
+  - Boundary
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: PlayerControls
   m_EditorClassIdentifier: 
   activate3DKey: 32
+  bombKey: 9

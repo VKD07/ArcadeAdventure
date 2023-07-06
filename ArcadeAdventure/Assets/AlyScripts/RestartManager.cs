@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class RestartManager : MonoBehaviour
 {
-    //var gameobjec  Gameobjectt;
+    
 
-    public int iLevelToLoad;
-    public bool useIntegerToLoadLevel;
+    
     public Transform ballStart;
     
     
@@ -25,11 +24,7 @@ public class RestartManager : MonoBehaviour
         }
     }
 
-    void LoadScene()
-    {
-        if (useIntegerToLoadLevel)
-        {
-            SceneManager.LoadScene(iLevelToLoad);
-        }
-    }
+    
+
+    
 }

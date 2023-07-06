@@ -7,12 +7,20 @@ public class ArcadeBtns : MonoBehaviour
 {
     [SerializeField] UnityEvent OnButtonPressed;
     [SerializeField] UnityEvent OnButtonReleased;
-
+    [SerializeField] UnityEvent OnButtonPressedOnce;
     private void OnTriggerStay(Collider other)
     {
         if(other.tag == "Player")
         {
             OnButtonPressed.Invoke();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            OnButtonPressedOnce.Invoke();
         }
     }
 

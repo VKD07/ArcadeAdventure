@@ -12,6 +12,7 @@ public class FP_Movement : MonoBehaviour
     Rigidbody rb;
     void Start()
     {
+        Time.timeScale = 1;
         rb = GetComponent<Rigidbody>();
     }
 
